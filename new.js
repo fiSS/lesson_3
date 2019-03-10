@@ -85,7 +85,7 @@ function chooseOptExpenses() {
            if ( (typeof(a))=== 'string' && (typeof(a)) != null && (typeof(b)) != null
            && a != '' && b != '' && a.length < 50) { 
                    console.log('done');
-                   appData.optionalExpenses[i] = b
+                   appData.optionalExpenses[i] = b;
        } else {
                 i--;
                 console.log (i);
