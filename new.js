@@ -79,16 +79,18 @@ function detectDayBudget(){
 
 function chooseOptExpenses() {
         for (let i = 0; i < 3; i++) {
-                   let a = prompt('Статья необязательных расходов?', ''),
-                       b = prompt('Во сколько обойдется?', '');
-       
-           if ( (typeof(a))=== 'string' && (typeof(a)) != null && (typeof(b)) != null
-           && a != '' && b != '' && a.length < 50) { 
+                   let a = prompt('Статья необязательных расходов?', '');
+                            
+           if ( (typeof(a))=== 'string' && (typeof(a)) != null && a != '' && a.length < 50) { 
                    console.log('done');
-                   appData.optionalExpenses[i] = b;
-       } else {
+                   appData.optionalExpenses[i]=a;
+         } else {
                 i--;
                 console.log (i);
                }
       }
 }
+chooseOptExpenses();
+alert("1: статья: " + appData.optionalExpenses[1]);
+alert("2: статья: " + appData.optionalExpenses[2]);
+alert("3: статья: " + appData.optionalExpenses[3]);
