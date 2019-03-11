@@ -78,7 +78,7 @@ function detectDayBudget(){
   detectDayBudget();
 
 function chooseOptExpenses() {
-        for (let i = 0; i < 3; i++) {
+        for (let i = 1; i < 4; i++) {
                    let a = prompt('Статья необязательных расходов?', '');
                             
            if ( (typeof(a))=== 'string' && (typeof(a)) != null && a != '' && a.length < 50) { 
